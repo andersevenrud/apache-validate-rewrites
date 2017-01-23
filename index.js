@@ -7,7 +7,7 @@
  *
  *   apache-validate-rewrites filename [,filename, ...]
  *
- * @version 0.0.3
+ * @version 0.0.4
  * @author Anders Evenrud <andersevenrud@gmail.com>
  * @license MIT
  */
