@@ -1,3 +1,5 @@
 # apache-validate-rewrites
 
-Apache RewriteRule collision validation
+Apache RewriteRule validation
+
+Currently only has collision-detection, but you can plug in other stuff as well.
