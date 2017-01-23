@@ -1,0 +1,22 @@
+{
+  "name": "apache-validate-rewrites",
+  "version": "0.0.1",
+  "description": "Apache RewriteRule collision validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "apache-validate-rewrites": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersevenrud/apache-validate-rewrites.git"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andersevenrud/apache-validate-rewrites/issues"
+  },
+  "homepage": "https://github.com/andersevenrud/apache-validate-rewrites#readme"
+}
