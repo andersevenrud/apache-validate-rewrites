@@ -7,7 +7,7 @@
  *
  *   apache-validate-rewrites filename [,filename, ...]
  *
- * @version 0.0.4
+ * @version 0.0.5
  * @author Anders Evenrud <andersevenrud@gmail.com>
  * @license MIT
  */
@@ -80,8 +80,7 @@ function validate(filePath) {
 process.argv.slice(2).forEach((val) => {
 
   validate(val).then(() => {
-    console.log('OK');
-    process.exit(0);
+    console.log(val, 'OK');
   }).catch((failed) => {
     if ( failed instanceof Array ) {
       const msg = _util.format('\x1b[31m%s:\x1b[0m %s', 'Failed rules', failed.length, 'in', val);
