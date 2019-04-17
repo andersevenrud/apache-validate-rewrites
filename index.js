@@ -82,19 +82,16 @@ process.argv.slice(2).forEach((val) => {
   validate(val).then(() => {
     console.log(val, 'OK');
   }).catch((failed) => {
-    if ( failed instanceof Array ) {
+    if ( failed.length > 0 ) {
       const msg = _util.format('\x1b[31m%s:\x1b[0m %s', 'Failed rules', failed.length, 'in', val);
       console.error(msg);
 
       failed.forEach((msg) => {
         console.log(msg);
       });
-    } else {
-      console.error(failed);
+    process.exit(1);
     }
 
-    process.exit(1);
   });
 
 });
-
