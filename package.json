@@ -1,6 +1,6 @@
 {
   "name": "apache-validate-rewrites",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Apache RewriteRule validation",
   "main": "index.js",
   "scripts": {
